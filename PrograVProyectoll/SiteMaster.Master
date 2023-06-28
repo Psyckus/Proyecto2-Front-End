@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="PrograVProyectoll.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>
+       <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <link href="Styles/Sidevar.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a2ec7d5873.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+         <div class="navbar">
+      <! ––«Perfil del usuario«––>
+      <div style="background-color:#f7f7f7; height:110px;" runat="server">
+        <div style="display: flex; padding:10px">
+            <div class="image-container">
+              <div class="circle"></div>
+              <img class="userImage" src="/Public/user01.jpg" alt="descripción-de-la-imagen" />
+            </div>
+            <div>
+                <h3 id="NameUser" class="NameUser" runat="server"></h3>
+                <h3 id="Department" class="Department" runat="server"></h3>
+            </div>
+
+        </div>
+
+          
+      </div>
+      <br />
+      <br />
+        <p class="guiasNavBar">PRINCIPAL</p>
+        
+      <div id="div_perfil" runat="server">
+        <ul>
+          <li>
+              <a href="/Pages/Generales/perfil.aspx">
+                  <i class="fa-solid fa-user"></i>
+                  Perfil
+              </a>
+
+          </li>
+        </ul>
+     </div>
+
+        <br />
+        <br />
+
+        <p id="p_titulo_admin_deptos" runat="server" class="guiasNavBar">ADMINISTRACION DE DEPARTAMENTOS</p>
+
+        <br />
+
+        <! ––«Opciones del departamento financiero«––>
+        <div runat="server" id="div_opciones_depto_financiero">
+        <ul>
+          <li>
+              <a href="/Pages/Pages%20Departamento%20Financiero/GestionGastosProyectosFinanciero.aspx">
+                  <i class="fa-solid fa-box-archive"></i>
+                  Gestión de Gastos de Proyecto
+              </a>
+
+          </li>
+          <li>
+              <a href="/Pages/Pages%20Departamento%20Financiero/GestionProyectosFinanciero.aspx">
+                <i class="fa-solid fa-calendar-check"></i>
+                Gestión de Proyectos
+              </a>
+          </li>
+          <li>
+              <a href="/Pages/Pages%20Departamento%20Financiero/SolicitudesExtraordinariasFinanciero.aspx">
+                  <i class="fa-solid fa-circle-exclamation"></i>
+                  Solicitudes de Extraordinarias
+              </a>
+
+          </li>
+        </ul>
+
+        </div>
+        
+        <br />
+
+        <! ––«Opciones de los jefes de departamento«––>
+        
+      <div runat="server" id="div_opciones_otros_deptos">
+        <ul>
+          <li>
+              <a href="/Pages/Pages%20Otros%20Departamentos/GestionGastosProyectosOtrosDeptos.aspx">
+                  <i class="fa-solid fa-box-archive"></i>
+                  Gestión de Gastos de Proyecto
+              </a>
+
+          </li>
+          <li>
+              <a href="/Pages/Pages%20Otros%20Departamentos/GestionProyectosOtrosDeptos.aspx">
+                  <i class="fa-solid fa-calendar-check"></i>
+                  Gestión de Proyectos
+              </a>
+
+          </li>
+        </ul>
+
+        <br />
+      </div>
+        <! ––« Opciones del administrador de usuarios «––>
+        
+      <div runat="server" id="div_opciones_admin_usuarios">
+        <ul>
+          <li><a href="/Pages/Pages%20Administrador%20Users/AdministrarUsuarios.aspx">
+              <i class="fa-solid fa-users"></i>
+              Administrar Usuarios
+              </a>
+
+          </li>
+        </ul>
+     </div>
+        <br />
+
+        <! ––« Boton Acerca De «––>
+        
+        <ul>
+          <li><a href="/Pages/Generales/AcercaDe.aspx">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              Acerca De
+              </a>
+          </li>
+        </ul>
+
+  </div>
+
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+ 
+</body>
+</html>

@@ -1,0 +1,106 @@
+﻿* {
+    font-family: 'SF UI  Text', sans-serif;
+    padding: 0;
+    margin: 0;
+    /*Eliminar la decoracion de los enlaces*/
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.guiasNavBar {
+    color: #a6a6a6;
+    margin-left: 10px
+}
+
+.navbar li {
+    margin-top: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar a {
+    display: block;
+    background-color: #ffffff;
+    color: #747474;
+    padding: 10px;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+    .navbar a:hover {
+        background-color: #fff3eb;
+    }
+
+    /*ICONOS DE CADA OPCION DEL NAVBAR*/
+    .navbar a i {
+        margin-right: 10px;
+        background-image: linear-gradient(to bottom, #b82c2c, #d38538);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+    }
+
+/*Otras paginas*/
+.content {
+    width: calc(100% - 400px);
+    margin-left: 400px;
+    position: absolute;
+    height: 100%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Imagen del usuario (perfil del navbar)*/
+.image-container {
+    position: relative;
+    width: 90px;
+    height: 90px;
+    margin-left: 10px
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid #c7cac9;
+    box-sizing: border-box;
+}
+
+.userImage {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.NameUser {
+    margin-left: 15px;
+    color: #444444;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.Department {
+    margin-left: 15px;
+    color: #b5b5b5;
+    font-size: 15px;
+    margin-top: 0px;
+}
