@@ -78,24 +78,6 @@ namespace PrograVProyectoll
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl div_opciones_depto_financiero;
 
         /// <summary>
-        /// Control div_opciones_otros_deptos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl div_opciones_otros_deptos;
-
-        /// <summary>
-        /// Control div_opciones_admin_usuarios.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl div_opciones_admin_usuarios;
-
-        /// <summary>
         /// Control ContentPlaceHolder1.
         /// </summary>
         /// <remarks>

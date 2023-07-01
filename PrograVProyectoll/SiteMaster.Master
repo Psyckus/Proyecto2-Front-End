@@ -16,7 +16,16 @@
 </head>
 <body>
    
-         <div class="navbar">
+       <div class="navbarr">
+        <nav>
+            <a href="#">Inicio</a>
+    <a href="#">Acerca</a>
+    <a href="#">Contacto</a>
+        </nav>
+</div>
+       <div class="navbar">
+ 
+
       <! ––«Perfil del usuario«––>
       <div style="background-color:#f7f7f7; height:110px;" runat="server">
         <div style="display: flex; padding:10px">
@@ -41,8 +50,8 @@
         <ul>
           <li>
               <a href="/Pages/Generales/perfil.aspx">
-                  <i class="fa-solid fa-user"></i>
-                  Perfil
+                  <i class="fa-solid fa-gauge"></i>
+                  Dashboard
               </a>
 
           </li>
@@ -61,77 +70,46 @@
         <ul>
           <li>
               <a href="/Pages/Pages%20Departamento%20Financiero/GestionGastosProyectosFinanciero.aspx">
-                  <i class="fa-solid fa-box-archive"></i>
-                  Gestión de Gastos de Proyecto
+                  <i class="fa-solid fa-credit-card"></i>
+                  Mis cuentas
               </a>
 
           </li>
           <li>
               <a href="/Pages/Pages%20Departamento%20Financiero/GestionProyectosFinanciero.aspx">
-                <i class="fa-solid fa-calendar-check"></i>
-                Gestión de Proyectos
+                <i class="fa-solid fa-money-check"></i>
+                Movimientos
               </a>
           </li>
           <li>
               <a href="/Pages/Pages%20Departamento%20Financiero/SolicitudesExtraordinariasFinanciero.aspx">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                  Solicitudes de Extraordinarias
+                  <i class="fa-solid fa-money-bill-transfer"></i>
+                  Transferencias internas
               </a>
 
           </li>
+
+
+              <li>
+              <a href="/Pages/Pages%20Otros%20Departamentos/GestionGastosProyectosOtrosDeptos.aspx">
+                  <i class="fa-solid fa-money-bill-transfer"></i>
+                  Transferencias interbancarias
+              </a>
+
+          </li>
+     
+
+
+
         </ul>
 
         </div>
         
         <br />
 
-        <! ––«Opciones de los jefes de departamento«––>
+
+</div>
         
-      <div runat="server" id="div_opciones_otros_deptos">
-        <ul>
-          <li>
-              <a href="/Pages/Pages%20Otros%20Departamentos/GestionGastosProyectosOtrosDeptos.aspx">
-                  <i class="fa-solid fa-box-archive"></i>
-                  Gestión de Gastos de Proyecto
-              </a>
-
-          </li>
-          <li>
-              <a href="/Pages/Pages%20Otros%20Departamentos/GestionProyectosOtrosDeptos.aspx">
-                  <i class="fa-solid fa-calendar-check"></i>
-                  Gestión de Proyectos
-              </a>
-
-          </li>
-        </ul>
-
-        <br />
-      </div>
-        <! ––« Opciones del administrador de usuarios «––>
-        
-      <div runat="server" id="div_opciones_admin_usuarios">
-        <ul>
-          <li><a href="/Pages/Pages%20Administrador%20Users/AdministrarUsuarios.aspx">
-              <i class="fa-solid fa-users"></i>
-              Administrar Usuarios
-              </a>
-
-          </li>
-        </ul>
-     </div>
-        <br />
-
-        <! ––« Boton Acerca De «––>
-        
-        <ul>
-          <li><a href="/Pages/Generales/AcercaDe.aspx">
-              <i class="fa-solid fa-circle-exclamation"></i>
-              Acerca De
-              </a>
-          </li>
-        </ul>
-
-  </div>
 
         <div class="content">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
