@@ -55,10 +55,10 @@ namespace PrograVProyectoll
 
                         // Autenticación exitosa
                         //string token = JsonConvert.DeserializeObject<string>(resultado);
-                        Session["Username"] = Username;
+                        Session["identificacion"] = Username;
                         Session["nombreCliente"] = resultado;
 
-                        Response.Redirect("~/Pages/Index.aspx", false);
+                        Response.Redirect("~/Pages/Movimientos.aspx", false);
                     }
                     else if (message.StatusCode == System.Net.HttpStatusCode.NotFound)
                     {

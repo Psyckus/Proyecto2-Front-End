@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CN_ListaCuentas.cs" />
+    <Compile Include="CN_MovimientosAhorro.cs" />
+    <Compile Include="CN_MovimientosCorrientes.cs" />
     <Compile Include="CN_Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
