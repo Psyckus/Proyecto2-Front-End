@@ -9,20 +9,16 @@
 <div class="container">
     <table class="tabla">
       <tr>
-        <th>Encabezado 1</th>
-        <th>Encabezado 2</th>
-        <th>Encabezado 3</th>
+        <th>Num_Cuenta</th>
+        <th>Monto</th>
+        <th>TipoCuenta</th>
       </tr>
+       <tbody id="lstfrmMantenimiento" runat="server">
       <tr>
-        <td>Dato 1</td>
-        <td>Dato 2</td>
-        <td>Dato 3</td>
+       <td><a></a> href="frmMantenimiento.aspx" </td>
       </tr>
-      <tr>
-        <td>Dato 4</td>
-        <td>Dato 5</td>
-        <td>Dato 6</td>
-      </tr>
+        </tbody>
+        
     </table>
   </div>
 
