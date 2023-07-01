@@ -1,0 +1,105 @@
+﻿body {
+    background-color: #ffffff;
+}
+
+.divContenido {
+    margin: 60px;
+    margin-top: 60px;
+    box-sizing: border-box;
+    box-shadow: 4px 3px 19px 4px rgba(0,0,0,0.27);
+    -webkit-box-shadow: 4px 3px 19px 4px rgba(0,0,0,0.27);
+    -moz-box-shadow: 4px 3px 19px 4px rgba(0,0,0,0.27);
+    display: flex;
+    border-radius: 25px;
+}
+
+.logo {
+    border-radius: 25px;
+    flex: 1;
+    background-color: #ffffff;
+    text-align: center;
+    padding-top: 230px;
+    padding-bottom: 50px;
+}
+
+/* LOGO DE LA UNIVERSIDAD*/
+#imgIcon {
+    height: 260px;
+    width: 350px;
+}
+
+
+#textBienvenida {
+    /* POSICIONAMIENTO DE LA LETRA */
+    font-family: 'SF UI  Text', sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 80px;
+    /* COLOR DE LA FUENTE */
+    background: linear-gradient(to right, #70357d, #6794c5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.input::placeholder {
+    /*LETRA Y FUENTE*/
+    font-family: 'SF UI  Text', sans-serif;
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.input:focus {
+    outline: none;
+    color: #323435;
+    font-family: 'SF UI  Text', sans-serif;
+}
+
+/* DISTANCIA ENTRE EL TITULO DE BIENVENIDA*/
+.inputContainerUser {
+    padding-top: 100px;
+}
+/* DISTANCIA ENTRE EL INPUT DEL USER Y EL PASSWORD*/
+.inputContainerPassword {
+    padding-top: 30px;
+}
+
+/* TEXTOS SUPERIORES A LOS INPUT*/
+.p {
+    font-family: 'SF UI  Text', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #555555;
+}
+
+.btnIniciarSesion {
+    background: linear-gradient(to right, #6794c5, #70357d);
+    color: #ffffff;
+    border: none;
+    font-family: 'SF UI  Text', sans-serif;
+    font-size: 12px;
+    padding: 12px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-top: 70px;
+    width: 350px;
+}
+
+    .btnIniciarSesion:hover {
+        cursor: pointer;
+    }
+
+/* PARRAFO POLITICAS DE PRIVACIDAD*/
+#p2 {
+    font-family: 'SF UI  Text', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 250px;
+    color: #555555;
+}
+
+#DivFinalpadding {
+    padding-bottom: 50px;
+}

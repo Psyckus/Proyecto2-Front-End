@@ -46,6 +46,10 @@
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.Net.Http.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -74,6 +78,7 @@
     <Content Include="Pages\Movimientos.aspx" />
     <Content Include="Pages\Transferencias_Interbancarias.aspx" />
     <Content Include="Pages\Transferencias_Internas.aspx" />
+    <Content Include="Styles\Login.css" />
     <Content Include="Styles\Sidevar.css" />
     <Content Include="Styles\Tablas.css" />
     <Content Include="Web.config" />
@@ -147,7 +152,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{a07cd514-7edc-43e4-a95e-814194aceae8}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
