@@ -11,7 +11,17 @@ namespace PrograVProyectoll
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["nombreCliente"] != null)
+            {
 
+
+                string nombreCliente = Session["nombreCliente"].ToString();
+
+                nombreCliente = nombreCliente.Replace("{", "").Replace("}", "").Replace("\"", "").Replace("nombre:", "").Replace("string", "").Trim();
+
+
+                nombreUsuario.InnerText = nombreCliente;
+            }
         }
     }
 }

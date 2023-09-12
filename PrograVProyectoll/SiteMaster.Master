@@ -1,120 +1,93 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteMaster.master.cs" Inherits="PrograVProyectoll.SiteMaster" %>
 
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>
-       <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="title" runat="server"></asp:ContentPlaceHolder>
     </title>
-    <asp:ContentPlaceHolder ID="head" runat="server">
-
-    </asp:ContentPlaceHolder>
     <link href="Styles/Sidevar.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/a2ec7d5873.js" crossorigin="anonymous"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
-   
-       <div class="navbarr">
-        <nav>
-            <a href="#">Inicio</a>
-    <a href="#">Acerca</a>
-    <a href="#">Contacto</a>
-        </nav>
-</div>
-       <div class="navbar">
- 
+    <div class="navbarr">
+        <h3 runat="server" id="nombreUsuario" style="color:indigo;margin-left:1400px;margin-top:35px">hola</h3>
+        <img class="avartarImage" src="Images/avatar.png"/>
+    </div>
 
-      <! ––«Perfil del usuario«––>
-      <div style="background-color:#f7f7f7; height:110px;" runat="server">
-        <div style="display: flex; padding:10px">
-            <div class="image-container">
-              <div class="circle"></div>
-              <img class="userImage" src="/Public/user01.jpg" alt="descripción-de-la-imagen" />
+    <div class="navbar">
+        <div style="background-color:#f7f7f7; height:110px;" runat="server">
+             
+            <div style="display: flex; padding:10px">
+                <div class="image-container">
+                    <img class="userImage" src="Images/logobanco1.png" alt="descripción-de-la-imagen" />
+                </div>
+                <div>
+                    <h3 id="NameUser" class="NameUser" runat="server"></h3>
+                    <h3 id="Department" class="Department" runat="server"></h3>
+                </div>
             </div>
-            <div>
-                <h3 id="NameUser" class="NameUser" runat="server"></h3>
-                <h3 id="Department" class="Department" runat="server"></h3>
-            </div>
-
         </div>
-
-          
-      </div>
-      <br />
-      <br />
+        <br />
+        <br />
         <p class="guiasNavBar">PRINCIPAL</p>
-        
-      <div id="div_perfil" runat="server">
-        <ul>
-          <li>
-              <a href="/Pages/Generales/perfil.aspx">
-                  <i class="fa-solid fa-gauge"></i>
-                  Dashboard
-              </a>
-
-          </li>
-        </ul>
-     </div>
-
+        <div id="div_perfil" runat="server">
+            <ul>
+                <li>
+                    <a href="/Index.aspx">
+                        <i class="fa-solid fa-gauge"></i>
+                        Dashboard
+                    </a>
+                </li>
+            </ul>
+        </div>
         <br />
         <br />
-
         <p id="p_titulo_admin_deptos" runat="server" class="guiasNavBar">ADMINISTRACION DE DEPARTAMENTOS</p>
-
         <br />
-
-        <! ––«Opciones del departamento financiero«––>
         <div runat="server" id="div_opciones_depto_financiero">
-        <ul>
-          <li>
-              <a href="/Pages/Pages%20Departamento%20Financiero/GestionGastosProyectosFinanciero.aspx">
-                  <i class="fa-solid fa-credit-card"></i>
-                  Mis cuentas
-              </a>
-
-          </li>
-          <li>
-              <a href="/Pages/Pages%20Departamento%20Financiero/GestionProyectosFinanciero.aspx">
-                <i class="fa-solid fa-money-check"></i>
-                Movimientos
-              </a>
-          </li>
-          <li>
-              <a href="/Pages/Pages%20Departamento%20Financiero/SolicitudesExtraordinariasFinanciero.aspx">
-                  <i class="fa-solid fa-money-bill-transfer"></i>
-                  Transferencias internas
-              </a>
-
-          </li>
-
-
-              <li>
-              <a href="/Pages/Pages%20Otros%20Departamentos/GestionGastosProyectosOtrosDeptos.aspx">
-                  <i class="fa-solid fa-money-bill-transfer"></i>
-                  Transferencias interbancarias
-              </a>
-
-          </li>
-     
-
-
-
-        </ul>
-
+            <ul>
+                <li>
+                    <a href="/Pages/Lista_Cuentas.aspx">
+                        <i class="fa-solid fa-credit-card"></i>
+                        Cuentas activas
+                    </a>
+                </li>
+                <li>
+                    <a href="/Pages/Mis_Cuentas.aspx">
+                        <i class="fa-solid fa-credit-card"></i>
+                        Mis cuentas
+                    </a>
+                </li>
+                <li>
+                    <a href="/Pages/Movimientos.aspx">
+                        <i class="fa-solid fa-money-check"></i>
+                        Movimientos
+                    </a>
+                </li>
+                <li>
+                    <a href="/Pages/Transferencias_Internas.aspx">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                        Transferencias internas
+                    </a>
+                </li>
+                <li>
+                    <a href="/Pages/Transferencias_Interbancarias.aspx">
+                        <i class="fa-solid fa-money-bill-transfer"></i>
+                        Transferencias interbancarias
+                    </a>
+                </li>
+            </ul>
         </div>
-        
         <br />
+    </div>
 
-
-</div>
-        
-
-        <div class="content">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
- 
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
 </body>
 </html>
+

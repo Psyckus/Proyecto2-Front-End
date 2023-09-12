@@ -13,25 +13,34 @@
 
 .tabla {
     border-collapse: collapse;
-    width: auto; /* Elimina el ancho fijo de la tabla */
+    width: 100%; /* Utiliza el ancho completo del contenedor */
     margin: 0 auto;
-    white-space: nowrap; /* Evita el ajuste de línea en las celdas */
 }
 
-    .tabla th,
-    .tabla td {
-        padding: 10px;
-        text-align: left;
-    }
+.tabla th,
+.tabla td {
+    padding: 12px 16px; /* Aumenta el padding para mayor espacio */
+    text-align: left;
+}
 
-    .tabla th {
-        background-color: #f2f2f2;
-    }
+.tabla th {
+    background-color: #f2f2f2;
+    font-weight: bold; /* Hace que los encabezados se destaquen más */
+}
 
-    .tabla tr:nth-child(even) {
-        background-color: #f9f9f9;
-    }
+.tabla tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
 
-    .tabla tr:hover {
-        background-color: #e5e5e5;
-    }
+.tabla tr:hover {
+    background-color: #e5e5e5;
+}
+
+.tabla a {
+    text-decoration: none;
+    color: #007bff; /* Cambia el color del enlace */
+}
+
+.tabla a:hover {
+    text-decoration: underline;
+}

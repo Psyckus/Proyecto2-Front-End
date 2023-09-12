@@ -1,4 +1,5 @@
 ﻿body {
+    overflow: hidden;
     background-color: #ffffff;
 }
 
@@ -24,10 +25,22 @@
 
 /* LOGO DE LA UNIVERSIDAD*/
 #imgIcon {
-    height: 260px;
-    width: 350px;
+    margin-top: 80px;
+    height: 30%;
+    width: 40%;
 }
-
+#imgIcon2 {
+    margin-top: -80px;
+    height: 60%;
+    width: 60%;
+    margin-left: -100px; /* Mueve la imagen a la derecha */
+  
+    margin-right: 100px; /* Mueve la imagen a la izquierda */
+}
+.logo {
+    width: 300px; /* Ajusta el ancho del div según tus necesidades */
+    height: 200px; /* Ajusta el alto del div según tus necesidades */
+}
 
 #textBienvenida {
     /* POSICIONAMIENTO DE LA LETRA */

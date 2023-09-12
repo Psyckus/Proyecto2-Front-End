@@ -185,7 +185,7 @@ namespace PrograVProyectoll.Pages
                 // Agrega el código HTML a la página web para mostrarlo en pantalla
                 this.lstfrmMantenimiento.InnerHtml = strListaProductos.ToString();
             }
-            if (value == "Cuenta Ahorro")
+            if (value == "Cuenta de Ahorro")
             {
                 List<CN_MovimientosAhorro> ListaMovimientosAhorro = ObtenerMovimientosAhorro(cuenta);
                 System.Text.StringBuilder strListaProductos = new System.Text.StringBuilder();

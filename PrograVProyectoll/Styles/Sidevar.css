@@ -1,9 +1,15 @@
-﻿* {
+﻿*{
     font-family: 'SF UI  Text', sans-serif;
     padding: 0;
     margin: 0;
     /*Eliminar la decoracion de los enlaces*/
     text-decoration: none;
+    overflow: hidden;
+}
+
+.navbarr {
+    background-color: #f7f7f7;
+    height: 110px;
 }
 
 .navbar {
@@ -64,20 +70,21 @@
 /*Imagen del usuario (perfil del navbar)*/
 .image-container {
     position: relative;
-    width: 90px;
-    height: 90px;
+    width: 300px;
+    height: 100px;
     margin-left: 10px
 }
 
-.circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 3px solid #c7cac9;
-    box-sizing: border-box;
+.avartarImage {
+    position: relative;
+    display: block;
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+    padding: 10px;
+    /*box-sizing: border-box;*/
+    margin-left: 800px;
+    margin-top: -90px;
 }
 
 .userImage {
@@ -85,22 +92,24 @@
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
+    object-fit: contain;
     padding: 10px;
     box-sizing: border-box;
 }
 
-.NameUser {
-    margin-left: 15px;
-    color: #444444;
-    margin-bottom: 5px;
-    margin-top: 20px;
+.welcome-message {
+    margin-top: 280px;
+    margin-left: -600px; /* Mueve el elemento 100 píxeles a la derecha */
+    font-size: 24px; /* Tamaño de la fuente */
+    font-weight: bold; /* Estilo de la fuente (negrita) */
+    font-family: Arial, sans-serif; /* Fuente utilizada */
+    /*text-align: center;*/ /* Alineación del texto */
+    /* Otros estilos de fuente personalizados */
 }
 
-.Department {
-    margin-left: 15px;
-    color: #b5b5b5;
-    font-size: 15px;
-    margin-top: 0px;
+.userImage2 {
+    margin-left: -500px; /* Ajusta el valor según tus necesidades */
 }
+
+
+

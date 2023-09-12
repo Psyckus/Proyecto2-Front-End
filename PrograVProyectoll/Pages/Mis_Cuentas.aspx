@@ -3,10 +3,13 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 <link href="../Styles/Tablas.css" rel="stylesheet" />
+    <link href="../Styles/Sidevar.css" rel="stylesheet" />
+
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <div class="container">
+    <div class="container" style="margin-top:300px;">
+
     <table class="tabla">
       <tr>
         <th>Número de cuenta</th>

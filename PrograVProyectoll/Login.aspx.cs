@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,7 +50,7 @@ namespace PrograVProyectoll
                     });
 
                     string resultado = task2.Result;
-                    if (message.StatusCode == System.Net.HttpStatusCode.OK)
+                    if (message.StatusCode == HttpStatusCode.OK)
                     {
 
 
@@ -58,9 +59,9 @@ namespace PrograVProyectoll
                         Session["identificacion"] = Username;
                         Session["nombreCliente"] = resultado;
 
-                        Response.Redirect("~/Pages/Movimientos.aspx", false);
+                        Response.Redirect("Index.aspx", false);
                     }
-                    else if (message.StatusCode == System.Net.HttpStatusCode.NotFound)
+                    else if (message.StatusCode == HttpStatusCode.NotFound)
                     {
                         // Credenciales incorrectas
                         lblMensaje.Visible = true;
@@ -71,7 +72,7 @@ namespace PrograVProyectoll
                     {
                         lblMensaje.Visible = true;
                         lblMensaje.Attributes["class"] = "alert alert-warming alert-dismissible fade show";
-                        lblMensaje.InnerHtml = "Error! Intentarlo más tarde. <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>";
+                        lblMensaje.InnerHtml = "Ha ocurrido un error intente de nuevo. <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>";
                     }
                 }
             }

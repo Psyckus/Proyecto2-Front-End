@@ -5,7 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Login</title>
+     <title>Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+  
     <! ––«Estilos CSS del Login «––>
     <link href="Estilos%20CSS/Generales/Login.css" rel="stylesheet" />
     <! ––«CDN Framework Bulma para estilos «––>
@@ -17,9 +19,9 @@
         
         <div class="divContenido" runat="server">
 
-              <%--<div class="logo">
-                  <image id="imgIcon" src="../images/Logo2.png"></image>
-              </div>--%>
+              <div class="logo">
+                  <image id="imgIcon" src="../images/logobanco1.png"></image>
+              </div>
            
               <div class="inputLogin">
                   <h1 id="textBienvenida">Inicie Sesion</h1>

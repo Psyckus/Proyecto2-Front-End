@@ -12,6 +12,16 @@ namespace PrograVProyectoll
         protected void Page_Load(object sender, EventArgs e)
         {
 
+            if (Session["identificacion"] != null)
+            {
+                string username = Session["identificacion"].ToString();
+                string nombreCliente = Session["nombreCliente"].ToString();
+
+                nombreCliente = nombreCliente.Replace("{", "").Replace("}", "").Replace("\"", "").Replace("nombre:", "").Replace("string", "").Trim();
+
+                lblWelcomeMessage.Text = "Bienvenido: " + nombreCliente;
+
+            }
         }
     }
 }

@@ -22,11 +22,7 @@ namespace PrograVProyectoll.Pages
                 strListaCuentasActivas.Append("<tr>");
                 strCodigoListaCuentasActivas = p.NumeroCuenta.ToString();
                 strListaCuentasActivas.Append("<th scope=\"row\">")
-                    .Append("<a href=\"/Pages/Mis_Cuentas.aspx?num_Cuenta=")
                     .Append(strCodigoListaCuentasActivas)
-                    .Append("\">")
-                    .Append(strCodigoListaCuentasActivas)
-                    .Append("</a>")
                     .Append("</td>")
                     .Append("<td>")
                     .Append(p.Saldo)
